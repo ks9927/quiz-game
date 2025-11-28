@@ -42,10 +42,26 @@ body {
     display: flex;
 }
 
+input {
+    appearance: none;
+    background-color: aliceblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+input:hover {
+    cursor: pointer;
+}
+
+input:checked {
+    border: 4px solid blue;
+}
 label {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .bold-txt {
     font-weight: bold;
+    margin-right: 10px;
 }
