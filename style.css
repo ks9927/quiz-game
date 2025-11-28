@@ -42,12 +42,3 @@ body {
     display: flex;
 }
 
-input {
-   appearance: none;
-   background-color: aliceblue;
-   padding: 10px;
-}
-
-label {
-    background-color: aquamarine;
-}
