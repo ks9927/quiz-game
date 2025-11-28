@@ -34,6 +34,14 @@ body {
     flex-direction: column;
 }
 
+.choice-div {
+    background-color: lightseagreen;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+}
+
 input {
    appearance: none;
    background-color: aliceblue;
@@ -42,8 +50,4 @@ input {
 
 label {
     background-color: aquamarine;
-}
-
-.choice-div {
-    background-color: blueviolet;
 }
