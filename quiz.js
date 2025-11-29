@@ -16,12 +16,15 @@ async function getQuizData() {
 
 const quizQuestion = document.querySelector(".quiz-question");
 const choices = document.querySelectorAll('input');
-const choiceLabel = document.querySelectorAll("label");
-getQuizData().then(quizInfo => {
-    for(const {question, correct_answer, incorrect_answers} of quizInfo) {
-        quizQuestion.textContent = question;
-    }
+const choiceLabels = document.querySelectorAll("label");
+
+function getQuizContent() {
+getQuizData().then(result => {
+    console.log(result);
 })
+}
+
+getQuizContent();
 
 // function checkAnswerChoice() {
 //     
