@@ -14,11 +14,16 @@ async function getQuizData() {
     }
 }
 
+const quizQuestion = document.querySelector(".quiz-question");
+const choices = document.querySelectorAll('input');
+const choiceLabel = document.querySelectorAll("label");
 getQuizData().then(quizInfo => {
-    console.log(quizInfo);
+    for(const {question, correct_answer, incorrect_answers} of quizInfo) {
+        quizQuestion.textContent = question;
+    }
 })
 
 // function checkAnswerChoice() {
-//     const choices = document.querySelectorAll('input');
+//     
 
 // }
